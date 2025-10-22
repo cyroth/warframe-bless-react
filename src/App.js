@@ -55,6 +55,7 @@ function App() {
     const wait_minutes = Math.floor((nextHour - now) / 60000);
 
     const outputLines = [];
+     // eslint-disable-next-line
     const activeBlesses = [
       formData.affinity_bless, formData.credit_bless, formData.resource_bless,
       formData.damage_bless, formData.health_bless, formData.shield_bless, formData.backup_bless
