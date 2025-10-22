@@ -1,0 +1,66 @@
+:root {
+  --bg: #f8f9fa;
+  --text: #212529;
+  --card-bg: #fff;
+  --input-bg: #ffffff;
+  --border: rgba(0,0,0,0.125);
+}
+
+.dark {
+  --bg: #0b1220;
+  --text: #e6edf3;
+  --card-bg: #0f1724;
+  --input-bg: #1c2128;
+  --border: rgba(255,255,255,0.12);
+}
+
+html, body, #root {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.card, .card-body, .card-header {
+  background: var(--card-bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.form-control, .form-select {
+  background-color: var(--input-bg);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.form-select option {
+  background-color: var(--input-bg);
+  color: var(--text);
+}
+
+.dark .form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e6edf3' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+}
+
+code {
+  background: var(--border);
+  padding: .15rem .3rem;
+  border-radius: .25rem;
+}
+
+.dark .text-muted {
+  color: rgba(230, 237, 243, 0.6) !important;
+}
+
+.output-section {
+  margin-top: 2rem;
+}
+
+.output-item {
+  margin-bottom: 1rem;
+}
+
+.copy-btn {
+  margin-left: 0.5rem;
+}
